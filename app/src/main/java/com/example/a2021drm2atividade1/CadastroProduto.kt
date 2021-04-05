@@ -21,7 +21,12 @@ class CadastroProduto : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro_produto)
 
+    val categorias = CategoriaDataBase.getInstance(this)!!.categoriaDao().listar()
 
+
+        val adp = ArrayAdapter(this,android.R.layout.simple_spinner_item,categorias)
+
+        spnCategoria.adapter = adp
 
 
 
