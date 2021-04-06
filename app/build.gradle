@@ -42,5 +42,7 @@ dependencies {
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
 
+    implementation 'org.glassfish:javax.annotation:10.0-b28'
+
 
 }
